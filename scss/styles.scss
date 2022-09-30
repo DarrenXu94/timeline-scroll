@@ -1,0 +1,54 @@
+body {
+	line-height: 1.5;
+}
+
+article {
+	position: relative;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.milestone {
+  scroll-margin-top: 80px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 16.66% 50px;
+	width: 100%;
+}
+
+.timeline {
+	&__nav {
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		transition: top .3s ease-out;
+		ul {
+			list-style: none;
+			list-style-position: inside;
+			margin: 15px 0;
+
+			li {
+				margin: 15px 0;
+				padding-left: 0;
+				list-style-type: none;
+				color: #bfc1c3;
+				border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+				cursor: pointer;
+				transition: all .3s ease-out;
+				
+				&.active {
+					font-weight: bold;
+					color: #f94125;
+					border-bottom: 1px dotted transparent;
+					transform: scale(1.2);
+				}
+				
+				&:hover {
+					color: #000
+				}
+			}
+		}
+	}
+}
